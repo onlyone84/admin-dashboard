@@ -6,6 +6,11 @@ const themeToggle = document.getElementById("theme-toggle");
 const burgerMenu = document.getElementById("navMenu");
 let realtime = document.getElementById("realtime");
 
+let getMode = localStorage.getItem("mode");
+if (getMode && getMode === "dark-mode") {
+	body.classList.add("dark");
+}
+
 sideMenu.forEach((i) => {
 	i.addEventListener("click", () => {
 		i.classList.toggle("active");
@@ -32,6 +37,12 @@ themeToggle.addEventListener("click", (e) => {
 	} else if (checkbox.checked === true) {
 		sunIco.classList.add("active");
 		moonIco.classList.remove("active");
+	}
+
+		if (!body.classList.contains("dark")) {
+		localStorage.setItem("mode", "light-mode");
+	} else {
+		localStorage.setItem("mode", "dark-mode");
 	}
 
 	// if (moonIco.contains(e.target)) {
