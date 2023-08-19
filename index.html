@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- box icon -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<!-- font awesome CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+			integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<title>Dasboard</title>
+		<link rel="stylesheet" href="../src/css/style.css" />
+	</head>
+	<body>
+		<div class="sidebar" id="sidebar">
+			<a href="#" class="logo">
+				<i class="bx bx-code-alt"></i>
+				<div class="logo-name"><span>Title </span>Here</div>
+			</a>
+			<ul class="side-menu">
+				<li>
+					<a href="#"
+						><i class="bx bxs-dashboard"></i>
+						Dashboard
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-store-alt"></i>
+						Store
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-analyse"></i>
+						Analys
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-message-square-dots"></i>
+						Tickets
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-group"></i>
+						Users
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-cog"></i>
+						Settings
+					</a>
+				</li>
+			</ul>
+			<ul class="side-menu">
+				<li>
+					<a href="#" class="logout">
+						<i class="bx bx-log-out-circle"></i>
+						Logout
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- sidebar END -->
+
+		<div class="content">
+			<nav>
+				<i class="bx bx-menu" id="navMenu"></i>
+				<form action="">
+					<div class="form-input">
+						<input type="search" placeholder="Search..." />
+						<button type="submit" class="search-btn">
+							<i class="bx bx-search"></i>
+						</button>
+					</div>
+				</form>
+				<div class="darkmode">
+					<input type="checkbox" id="checkbox" class="checkbox" />
+					<label for="checkbox" class="theme-toggle" id="theme-toggle">
+						<span class="ball"></span>
+						<i class="fas fa-sun theme-icon"></i>
+						<i class="fas fa-moon theme-icon"></i>
+					</label>
+				</div>
+				<a href="#" class="notif">
+					<i class="bx bx-bell"></i>
+					<span class="count">12</span>
+				</a>
+				<a href="#" class="profile">
+					<img src="../src/images/logo.png" alt="profile.png" />
+				</a>
+			</nav>
+		</div>
+
+		<section class="clock">
+			<div class="digital-clock">
+				<h1 id="realtime">12:00:00 PM</h1>
+			</div>
+		</section>
+
+		<script src="../src/js/script.js"></script>
+	</body>
+</html>
