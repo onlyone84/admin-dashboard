@@ -1,0 +1,36 @@
+.lLaporan {
+    margin-top: 10%;
+}
+
+.crd {
+    width: 35%;
+}
+
+.row {
+    width: 85%;
+    color: #bdc4ca;
+}
+
+
+@media (min-width: 200px){
+    .lLaporan {
+        margin-top: 50%;
+    }
+
+}
+
+@media (max-width: 766px){
+    .crd {
+        width: 100%;
+    }
+
+
+}
+
+@media (min-width: 980px){
+    .lLaporan {
+        margin-top: 10%;
+    }
+}
+
+
